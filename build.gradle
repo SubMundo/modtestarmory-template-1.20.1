@@ -16,6 +16,10 @@ repositories {
 	// Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
 	// See https://docs.gradle.org/current/userguide/declaring_repositories.html
 	// for more information about repositories.
+	// The Maven with the mods source
+	maven {url 'https://libs.azuredoom.com:4443/mods'}
+	// Needed for Fabric only at the moment
+	maven { url "https://maven.terraformersmc.com/releases" }
 }
 
 fabricApi {
@@ -35,6 +39,10 @@ dependencies {
 	// These are included in the Fabric API production distribution and allow you to update your mod to the latest modules at a later more convenient time.
 
 	// modImplementation "net.fabricmc.fabric-api:fabric-api-deprecated:${project.fabric_version}"
+
+	//Fabric or Quilt
+	modImplementation "mod.azure.azurelib:azurelib-fabric-1.20.1:2.0.19"
+	modApi "com.terraformersmc:modmenu:7.2.2" // Fabric bug is requiring this
 }
 
 processResources {

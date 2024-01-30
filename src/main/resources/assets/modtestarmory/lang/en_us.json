@@ -1,0 +1,13 @@
+{
+  "item.modtestarmory.ruby": "Ruby",
+  "item.modtestarmory.raw_ruby": "Raw Ruby",
+
+  "item.modtestarmory.armor1_helmet": "Custom Helmet",
+  "item.modtestarmory.armor1_chestplate": "Custom Chestplate",
+  "item.modtestarmory.armor1_legging": "Custom Legging",
+  "item.modtestarmory.armor1_boots": "Custom Boots",
+
+
+  "itemgroup.ruby": "Ruby Firstmod"
+
+}
